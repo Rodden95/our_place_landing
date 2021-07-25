@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "components/_header.scss",
+        "components/_hero.scss",
+        "components/_magazines.scss",
+        "components/_about-us.scss",
+        "components/_product-description.scss",
+        "components/_product-list.scss",
+        "components/_follow.scss",
+        "components/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
