@@ -1,0 +1,117 @@
+.products {
+  .container {
+    .title-cont {
+      padding: 80px 0;
+      width: 500px;
+      margin: 0 auto;
+
+      display: flex;
+      flex-direction: column;
+
+      .products__title {
+        font-weight: bold;
+        font-size: 33px;
+        line-height: 55px;
+        text-align: center;
+        letter-spacing: 1.2px;
+        margin-bottom: 30px;
+      }
+      .products__text {
+        font-size: 18px;
+        line-height: 29px;
+        text-align: center;
+
+        color: #4f463f;
+      }
+    }
+    .list-cont {
+      .products__list {
+        display: flex;
+        flex-direction: row;
+        .products__item {
+          width: calc((100% - 40px) / 4);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .products__item:not(:last-child) {
+          margin-right: 40px;
+        }
+      }
+    }
+    .products__btn-list {
+      display: flex;
+      flex-direction: row;
+
+      .item:not(:last-child) {
+        margin-right: 13px;
+      }
+      .btn {
+        width: 19px;
+        height: 19px;
+        background-color: tomato;
+        border-radius: 60%;
+        border: none;
+      }
+      .btn:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+    .img-cont {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 260px;
+      height: 190px;
+      border-radius: 50%;
+      background-color: #f7f3eb;
+      margin-bottom: 20px;
+    }
+    .products__img {
+      position: absolute;
+      bottom: 20px;
+      width: 240px;
+      height: 240px;
+    }
+    .products__img.pic4 {
+      width: 100%;
+      bottom: -30px;
+    }
+    .description-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 160px;
+      height: 145px;
+      margin-bottom: 20px;
+      .products__title {
+        margin-bottom: 5px;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+
+        color: #35312e;
+      }
+      .products__text {
+        font-size: 11px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.2px;
+
+        color: #6e635a;
+        &.price {
+          margin-bottom: 6px;
+          font-size: 14px;
+          line-height: 21px;
+          text-align: center;
+          letter-spacing: 0.1px;
+
+          color: #6e635a;
+        }
+      }
+    }
+  }
+}

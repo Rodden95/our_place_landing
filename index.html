@@ -6,53 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./sass/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <span
-        >SHIPPING AND RETURNS ARE ALWAYS FREE FROM OUR PLACE TO YOURS 🙂</span
+    <!-- header -->
+    <header class="container">
+      <div  class="top-title">SHIPPING AND RETURNS ARE ALWAYS FREE FROM OUR PLACE TO YOURS 🙂</div
       >
-      <nav>
-        <div class="container">
-          <img src="./img/White Underline Copy.jpg" alt="OUR PLACE" />
-          <ul>
-            <li>shop</li>
-            <li>always pan</li>
+      <nav class="header">
+        <!-- <div class="container container--flex"> -->
+          <img class="header__merch" src="./img/White Underline Copy.jpg" alt="OUR PLACE" />
+          <ul class="header__list header__list--left">
+            <li class="header__item">shop</li>
+            <li class="header__item">always pan</li>
           </ul>
-          <ul>
-            <li>missions</li>
-            <li>faq</li>
-            <li>0</li>
+          <ul class="header__list header__list--right">
+            <li class="header__item">missions</li>
+            <li class="header__item">faq</li>
+            <li class="header__item header__item--round">
+              <span>0</span>
+            </li>
           </ul>
-        </div>
+        <!-- </div> -->
       </nav>
     </header>
     <main>
       <!-- hero секция -->
-      <section>
-        <div class="container hero">
-          <span>Meet The Always Pan</span>
-          <h1>Your new skillet</h1>
-          <a href="#">Shop the Always Pan</a>
-        </div>
+      <section class="hero">
+        
+          <div class="container-hero">
+            <span class="hero__info">Meet The Always Pan</span>
+            <h1 class="hero__title">Your new <span>skillet</span></h1>
+            <!-- <div class="hero__btn"> -->
+            <button class="hero__btn" href="#">Shop the Always Pan</button>
+            <!-- </div> -->
+          </div>
+        
       </section>
       <!-- секция с примерами журналов -->
-      <section>
+      <section class="magazines-sect">
         <div class="container">
-          <h2>"Doing the job of eight traditional cookware pieces"</h2>
-          <ul>
-            <li>bon appetit</li>
-            <li>the newyork times</li>
-            <li>vogue</li>
-            <li>oprah magazine</li>
+          <h2 class="magazines-sect__title">"Doing the job of eight traditional cookware pieces"</h2>
+          <ul class="magazines-sect__list">
+            <li class="magazines-sect__item"><img src="./img/bon_appetit.png" alt="" class="magazines-sect__img"></li>
+            <li class="magazines-sect__item"><img src="./img/ny_times.png" alt="" class="magazines-sect__img"></li>
+            <li class="magazines-sect__item"><img src="./img/vogue.png" alt="" class="magazines-sect__img"></li>
+            <li class="magazines-sect__item"><img src="./img/oprah.png" alt="" class="magazines-sect__img"></li>
           </ul>
         </div>
       </section>
       <!-- секция описания компании -->
       <section>
-        <div class="container">
-          <h2>welcome to our PLACE</h2>
-          <span
+        <div class="company-description">
+          <h2 class="company-description__title">Welcome to Our Place</h2>
+          <span class="company-description__text"
             >At Our Place, we believe in the power of home-cooking to bring
             people together. Our collections are new heirlooms from the cultures
             and places that make up the fabric of the modern multi-ethnic
@@ -62,93 +71,94 @@
           >
         </div>
       </section>
-      <!-- секция с примером товара -->
+      <!-- секция с карточкой товара -->
       <section>
-        <div class="container">
-          <h2>Designed for Everything and Always</h2>
-          <ul>
-            <li><button class="btn">цвет 1</button></li>
-            <li><button class="btn">цвет 2</button></li>
-            <li><button class="btn">цвет 3</button></li>
-            <li><button class="btn">цвет 4</button></li>
-            <li><button class="btn">цвет 5</button></li>
-            <li><button class="btn">цвет 6</button></li>
-            <li><button class="btn">цвет 7</button></li>
-            <li><button class="btn">цвет 8</button></li>
+        <div class="container example-product">
+          <h2 class="example-product__title">Designed for Everything and Always</h2>
+          <ul class="example-product__list">
+            <li class="example-product__item"><button class="btn" id="#E09D81" type="button">цвет 1</button></li>
+            
           </ul>
-          <img src="./img/product_description.png" alt="сковородка в разборе" />
-          <div>Modular lid to release & trap steam</div>
-          <div>Beechwood spatula & built-in spoon rest</div>
-          <div>2 easy-pour spouts</div>
-          <div>Nesting steamer basket & colander</div>
-          <div>Exclusive, ceramic nonstick made without PFOAs & PTFEs</div>
-          <div>Stay cool handle</div>
+          <div class="container-product">
+            <img class="example-product__img" src="./img/product_description.png" alt="сковородка в разборе" />
+            <div class="example-product__text one">Modular lid to release & trap steam</div>
+            <div class="example-product__text two">Beechwood spatula & built-in spoon rest</div>
+            <div class="example-product__text three">2 easy-pour spouts</div>
+            <div class="example-product__text four">Nesting steamer basket & colander</div>
+            <div class="example-product__text five">Exclusive, ceramic nonstick made without PFOAs & PTFEs</div>
+            <div class="example-product__text six">Stay cool handle</div>
+          </div>
         </div>
       </section>
       <!-- секция с товарами -->
-      <section>
+      <section class="products">
         <div class="container">
           <div class="title-cont">
-            <h2>From curated essentials to limited-run editions.</h2>
-            <span
+            <h2 class="products__title">From curated essentials to limited-run editions.</h2>
+            <span class="products__text"
               >We make products inspired by traditions – and we're starting with
               one you might be familiar with: Dinner.</span
             >
           </div>
           <div class="list-cont">
-            <ul>
-              <li>
-                <img src="./img/product_item1.png" alt="pic1" />
-                <div>
-                  <h2>Side Bowls</h2>
-                  <span>SET OF 4 - $45</span><span>Hand-painted porcelain stackable bowls, designed for plating, eating, and scooping.</span>
+            <ul class="products__list">
+              <li class="products__item">
+                <div class="img-cont">
+                  <img class="products__img" src="./img/product_item1.png" alt="pic1" />
                 </div>
-                <ul>
-                  <li><button>1 color</button></li>
-                  <li><button>2 color</button></li>
-                  <li><button>3 color</button></li>
+                <div class="description-container">
+                  <h2 class="products__title">Side Bowls</h2>
+                  <span class="products__text price">SET OF 4 - $45</span><span class="products__text two">Hand-painted porcelain stackable bowls, designed for plating, eating, and scooping.</span>
+                </div>
+                <ul class="products__btn-list">
+                  <li class="item"><button class="btn"></button></li>
+                  <li class="item"><button class="btn"></button></li>
+                  <li class="item"><button class="btn"></button></li>
                 </ul>
               </li>
-              <li>
-                <img src="./img/product_item2.png" alt="pic2" />
-                <div>
-                  <h2>Drinking Glasses</h2>
-                  <span>SET OF 4 - $50</span><span>Hand-made and stackable. Made from recycled glass and natural sand. Naturally colored, without dyes.</span>
+              <li class="products__item">
+                <div class="img-cont">
+                <img class="products__img" src="./img/product_item2.png" alt="pic2" /></div>
+                <div class="description-container">
+                  <h2 class="products__title">Drinking Glasses</h2>
+                  <span class="products__text price">SET OF 4 - $50</span><span class="products__text two">Hand-made and stackable. Made from recycled glass and natural sand. Naturally colored, without dyes.</span>
                 </div>
-                <ul>
-                  <li><button>1 color</button></li>
-                  <li><button>2 color</button></li>
-                  <li><button>3 color</button></li>
-                  <li><button>4 color</button></li>
+                <ul class="products__btn-list">
+                  <li class="item"><button class="btn"></button></li>
+                  <li class="item"><button class="btn"></button></li>
+                  <li class="item"><button class="btn"></button></li>
+                  <li class="item"><button class="btn"></button></li>
                 </ul>
               </li>
-              <li>
-                <img src="./img/product_item3.png" alt="pic3" />
-                <div>
-                  <h2>Main Plates</h2>
-                  <span>SET OF 4 - $50</span><span>Hand-painted porcelain plates, stackable and designed for big appetites.</span>
+              <li class="products__item">
+                <div class="img-cont">
+                <img class="products__img" src="./img/product_item3.png" alt="pic3" /></div>
+                <div class="description-container">
+                  <h2 class="products__title">Main Plates</h2>
+                  <span class="products__text price">SET OF 4 - $50</span><span class="products__text two">Hand-painted porcelain plates, stackable and designed for big appetites.</span>
                 </div>
-                <ul>
-                  <li><button>1 color</button></li>
-                  <li><button>2 color</button></li>
-                  <li><button>3 color</button></li>
+                <ul class="products__btn-list">
+                  <li class="item"><button class="btn"></button></li>
+                  <li class="item"><button class="btn"></button></li>
+                  <li class="item"><button class="btn"></button></li>
                 </ul>
               </li>
-              <li>
-                <img src="./img/product_item4.png" alt="pic4" />
-                <div>
-                  <h2>Always Pan</h2>
-                  <span>$145</span><span>Thoughtfully designed to be the perfect size and shape to do the work of eight pieces of traditional cookware. </span>
+              <li class="products__item">
+                <div class="img-cont">
+                <img class="products__img pic4" src="./img/product_item4.png" alt="pic4" /></div>
+                <div class="description-container">
+                  <h2 class="products__title">Always Pan</h2>
+                  <span class="products__text price">$145</span><span class="products__text two">Thoughtfully designed to be the perfect size and shape to do the work of eight pieces of traditional cookware. </span>
                 </div>
-                <ul>
-                  <li><button class="btn">цвет 1</button></li>
-                  <li><button class="btn">цвет 2</button></li>
-                  <li><button class="btn">цвет 3</button></li>
-                  <li><button class="btn">цвет 4</button></li>
-                  <li><button class="btn">цвет 5</button></li>
-                  <li><button class="btn">цвет 6</button></li>
-                  <li><button class="btn">цвет 7</button></li>
-                  <li><button class="btn">цвет 8</button></li>
+                <ul class="products__btn-list">
+                  <li class="item"><button class="btn"></button></li>
+                  <li class="item"><button class="btn"></button></li>
+                  <li class="item"><button class="btn"></button></li>
+                  <li class="item"><button class="btn"></button></li>
+                  <li class="item"><button class="btn"></button></li>
+                  <li class="item"><button class="btn"></button></li>
+                  <li class="item"><button class="btn"></button></li>
+                  <li class="item"><button class="btn"></button></li>
                 </ul> 
               </li>
             </ul>
@@ -156,79 +166,89 @@
           
         </div>
       </section>
-      <section>
+      <!-- follow -->
+      <section class="follow-sect">
         <div class="container">
-          <ul>
-            <li><img src="./img/follow-sect_img.png" alt="сковородка с едой"></li>
-            <li><span>#DirtyDishes</span>
-              <span>A full sink is a sign of a great night. You wash, we'll dry.</span>
-            <a href="#">Follow Along</a>
+          <ul class="follow-sect__list">
+            <li class="follow-sect__item"><img class="follow-sect__img" src="./img/follow-sect_img.png" alt="сковородка с едой"></li>
+            <li class="follow-sect__item text"><span class="follow-sect__hashtag">#DirtyDishes</span>
+              <span class="follow-sect__text">A full sink is a sign of a great night. You wash, we'll dry.</span>
+            <button class="follow-sect__button">Follow Along</button>
             </li>
-            <li><img src="./img/follow-sect_img2.png" alt="сковородка закрыта"></li>
+            <li class="follow-sect__item"><img class="follow-sect__img" src="./img/follow-sect_img2.png" alt="сковородка закрыта"></li>
           </ul>
         </div>
       </section>
     </main>
-    <footer>
-      <section class="registr">
-        <div>
-          <h2>Keep in touch ☺</h2>
-          <span>Be the first to know about new collections, special events, and what’s going on at Our Place.</span>
-          <form action="">SUBMIT</form>
+    <footer class="footer">
+     
+        <div class="registr-container">
+          <h2 class="footer__general-title">Keep in touch &#128521</h2>
+          <span class="footer__gereral-text">Be the first to know about new collections, special events, and what’s going on at Our Place.</span>
+          <form class="footer__form" action="">
+            <label class="label"><span class="label__span">Your email</span>
+              <input type="text" class="input">
+              
+            </label>
+            <button type="submit" class="submit-btn">submit</button>
+          </form>
  
         </div>
         <div class="footer-nav">
-          <div class="one-col">
-            <h4>SHOP</h4>
-            <ul>
-              <li>Main Plates</li>
-              <li>Side Bowls</li>
-              <li>Drinking Glasses</li>
-              <li>Family Dinner Bundle</li>
-      
-            </ul>
+          <div class="cols-container">
+            <div class="col">
+              <h4 class="footer-nav__title"> SHOP</h4>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">Main Plates</li>
+                <li class="footer-nav__item">Side Bowls</li>
+                <li class="footer-nav__item">Drinking Glasses</li>
+                <li class="footer-nav__item">Family Dinner Bundle</li>
+            
+              </ul>
+            </div>
+            <div class="col">
+              <h4 class="footer-nav__title">Company</h4>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">Mission</li>
+                <li class="footer-nav__item">FAQs</li>
+                <li class="footer-nav__item">Contact Us</li>
+                <li class="footer-nav__item">Returns</li>
+                <li class="footer-nav__item">Bulk Orders</li>
+                <li class="footer-nav__item">Careers</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4 class="footer-nav__title">SOCIAL</h4>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">Instagram</li>
+                <li class="footer-nav__item">Twitter</li>
+              </ul>
+            </div>
           </div>
-          <div class="two-col">
-            <h4>Company</h4>
-            <ul>
-              <li>Mission</li>
-              <li>FAQs</li>
-              <li>Contact Us</li>
-              <li>Returns</li>
-              <li>Bulk Orders</li>
-              <li>Careers</li>
-            </ul>
-          </div>
-          <div class="three-col">
-            <h4>SOCIAL</h4>
-            <ul>
-              <li>Instagram</li>
-              <li>Twitter</li>
-            </ul>
-          </div>
-          <div class="flags-sects">
-            <h4></h4>
-            <ul>
-              <li><svg class="flag-sects__icon">
+          <!-- <div cla 
+            <ul class="flags-sects__list">
+              <li class="flags-sects__item"><svg class="flag-sects__icon">
                 <use href="./img/symbol-defs.svg"></use>
               </svg></li>
-              <li><svg class="flag-sects__icon">
+              <li class="flags-sects__item"><svg class="flag-sects__icon">
                 <use href="./img/symbol-defs.svg"></use>
               </svg></li>
             </ul>
-          </div>
+          </div> -->
         </div>
-      </section>
-      <section class="footer-end">
-        <span class="c">&copy;Our Place 2021</span>
-        <ul>
-          <li><span>Copyright 2021</span></li>
-          <li><a href="">Privacy</a></li>
-          <li><a href="">Terms</a></li>
-          <li><a href="">Returns</a></li>
-          <li><a href="">Znak-invalidnosti</a></li>
-        </ul>
-      </section>
+      
+      
     </footer>
+    <section class="footer-copy-container">
+      <span class="footer__copy">&copy; Our Place 2021</span>
+      <ul class="footer-bottom__list">
+        <li class="footer-bottom__item"><a class="footer-bottom__link">Copyright 2021</a></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="">Privacy</a></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="">Terms</a></li>
+        <li class="footer-bottom__item"><a class="footer-bottom__link" href="">Returns</a></li>
+        <li class="footer-bottom__item inval"><a class="footer-bottom__link" href="">
+          <svg class="svg"><use href="./img/symbol-defs.svg#icon-inval"></use></svg></a></li>
+      </ul>
+    </section>
   </body>
 </html>

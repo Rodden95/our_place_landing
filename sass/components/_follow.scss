@@ -1,0 +1,57 @@
+.follow-sect {
+  .follow-sect__list {
+    display: flex;
+    padding-top: 100px;
+    .follow-sect__item {
+      width: calc((100%) / 3);
+    }
+    .follow-sect__item.text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: $about-sect;
+
+      .follow-sect__hashtag {
+        font-size: 11px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        color: #35312e;
+
+        margin-bottom: 35px;
+      }
+      .follow-sect__text {
+        font-size: 24px;
+        font-weight: bold;
+
+        line-height: 46px;
+        text-align: center;
+        letter-spacing: 1px;
+
+        color: #35312e;
+        margin-bottom: 65px;
+      }
+      .follow-sect__button {
+        border: none;
+        padding: 19px 41px;
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        background-color: #fff;
+        color: #4f463f;
+        transition: border-radius 350ms linear, background-color 250ms linear,
+          color 350ms linear;
+      }
+      .follow-sect__button:hover {
+        border-radius: 5px;
+        background-color: #6c674d;
+        color: white;
+      }
+    }
+  }
+}

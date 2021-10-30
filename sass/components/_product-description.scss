@@ -1,0 +1,126 @@
+$colors: #e09d81, #748ea1, #b76d47, #7d836e, #c33636, #cdc7b3, #595752, #d3c2ca;
+.example-product {
+  background-color: $product-desc-bg;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 0px 130px;
+  &__title {
+    margin-bottom: 50px;
+    color: $title-color;
+    font-size: 35px;
+    line-height: 48px;
+    text-align: center;
+  }
+  .example-product__list {
+    display: flex;
+    &__item {
+      .btn {
+        border-radius: 50%;
+        border: none;
+        background-color: tomato;
+      }
+    }
+  }
+  .container-product {
+    position: relative;
+    transform: translateX(15%);
+    &__img {
+      // position: relative;
+      // left: 50%;
+      // transform: translateX(20%);
+    }
+    .example-product__text {
+      position: absolute;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+      text-transform: uppercase;
+
+      &.one {
+        width: 140px;
+        top: 90px;
+        left: -125px;
+        &::after {
+          position: absolute;
+          left: 160px;
+          content: " ";
+          width: 10px;
+          height: 10px;
+          background-color: rgb(247, 167, 75);
+        }
+      }
+      &.two {
+        width: 140px;
+        top: 45px;
+        right: 20px;
+        &::after {
+          position: absolute;
+          left: 60px;
+          bottom: -40px;
+          content: " ";
+          width: 10px;
+          height: 10px;
+          background-color: rgb(247, 167, 75);
+        }
+      }
+      &.three {
+        width: 80px;
+        top: 360px;
+        left: -35px;
+        &::after {
+          position: absolute;
+          left: 120px;
+          bottom: -20px;
+          content: " ";
+          width: 10px;
+          height: 10px;
+          background-color: rgb(247, 167, 75);
+        }
+      }
+      &.four {
+        width: 170px;
+        top: 290px;
+
+        right: 25px;
+        &::before {
+          position: absolute;
+          left: -38px;
+          content: " ";
+          width: 10px;
+          height: 10px;
+          background-color: rgb(247, 167, 75);
+        }
+      }
+      &.five {
+        width: 170px;
+        bottom: 25px;
+        left: -130px;
+        &::after {
+          position: absolute;
+          left: 250px;
+          bottom: -5px;
+          content: " ";
+          width: 10px;
+          height: 10px;
+          background-color: rgb(247, 167, 75);
+        }
+      }
+      &.six {
+        width: 140px;
+        bottom: 100px;
+        right: -20px;
+        &::before {
+          position: absolute;
+          left: 20px;
+          top: -30px;
+          content: " ";
+          width: 10px;
+          height: 10px;
+          background-color: rgb(247, 167, 75);
+        }
+      }
+    }
+  }
+}
